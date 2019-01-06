@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         result.text = ""
         flag = 2
     }
-    @IBAction func buttonMultiply(_ sender: Any) {
+    @IBAction func buttonMultiply(_  sender: Any) {
         temp = Double(result.text!)!
         result.text = ""
         flag = 3
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         flag = 4
     }
     
-    @IBAction func buttonResult(_ sender: Any) {
+    @IBAction func result(_ sender: Any)  {
         if flag == 1{
             temp = temp + Double(result.text!)!
         }
@@ -84,6 +84,7 @@ class ViewController: UIViewController {
         }
         result.text="\(temp)"
     }
+    
     @IBAction func buttonAC(_ sender: Any) {
         result.text = ""
     }
